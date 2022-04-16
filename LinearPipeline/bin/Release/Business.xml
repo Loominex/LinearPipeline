@@ -1,0 +1,1837 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Business</name>
+    </assembly>
+    <members>
+        <member name="M:Business.Controllers.AutoInsInquiryController.LossInquiry(System.String,System.String@)">
+            <summary>
+            وب سرویس آقای جدیدی
+            </summary>
+            <param name="insNumber"></param>
+            <param name="errorMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Business.Controllers.AutoInsInquiryController.LastLossInquiry(System.String,System.String@)">
+            <summary>
+            اخرین مقدار و تغییرات بیمه نامه را بر می گرداند
+            آخرین آپدیت در درون خود فیلد ها است و لیست الحاقیه ها وجود ندارد
+            </summary>
+            <param name="insNumber"></param>
+            <param name="errorMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Business.Controllers.AutoInsInquiryController.ReturnUpdatedDataByLossDate(System.String,System.DateTime,System.String@)">
+            <summary>
+            آخرین اطلاعات آپدیت شده بیمه نامه با توجه به تاریخ وقوع حادثه که باید آپدیت قبل از این تاریخ باشد
+            مقدار آخرین الحاقیه به همراه اطلاعات آپدیتی نمایش داده می شود.
+            آخرین آپدیت در درون خود فیلد ها است و لیست الحاقیه ها وجود ندارد
+            </summary>
+            <param name="insNumber"></param>
+            <param name="lossDate"></param>
+            <param name="errorMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Business.Controllers.CarFullInquiryController">
+            <summary>
+            لیست استعلامات از بیمه مرکزی برای راننده مقصر
+            </summary>
+        </member>
+        <member name="M:Business.Controllers.CarFullInquiryController.CarOwnerInquiry(ViewModels.Loss.AutomobileInfoViewModel)">
+             <summary>
+            (inquiry naja) اطلاعات اتومبیل + اطلاعات صاحب پلاک بر گردانده می شود
+             </summary>
+             <param name="AutoInfo"></param>
+             <returns></returns>
+        </member>
+        <member name="T:Business.DevPortalNew.struc_User">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_User.StationNo">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_User.LocationNo">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_User.UserType">
+            <remarks/>
+        </member>
+        <member name="T:Business.DevPortalNew.struc_GeneralLossUser">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_GeneralLossUser.StationNo">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_GeneralLossUser.LocationNo">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_GeneralLossUser.UserType">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_GeneralLossUser.FullName">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_GeneralLossUser.RoleName">
+            <remarks/>
+        </member>
+        <member name="P:Business.DevPortalNew.struc_GeneralLossUser.RoleID">
+            <remarks/>
+        </member>
+        <member name="T:Business.AccountNumber.Account_Number">
+            <remarks/>
+        </member>
+        <member name="M:Business.AccountNumber.Account_Number.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.AccountNumber.Account_Number.Fetch_AccountNumberCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.AccountNumber.Account_Number.Fetch_AccountNumber(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.AccountNumber.Account_Number.Fetch_AccountNumberAsync(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.AccountNumber.Account_Number.Fetch_AccountNumberAsync(System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.AccountNumber.Account_Number.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.AccountNumber.Fetch_AccountNumberCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.AccountNumber.Fetch_AccountNumberCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.AccountNumber.Fetch_AccountNumberCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.DarmanLossService.draft_status">
+            <remarks/>
+        </member>
+        <member name="M:Business.DarmanLossService.draft_status.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.DarmanLossService.draft_status.update_statusCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.DarmanLossService.draft_status.update_status(System.Int32,System.String,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.DarmanLossService.draft_status.update_statusAsync(System.Int32,System.String,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.DarmanLossService.draft_status.update_statusAsync(System.Int32,System.String,System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.DarmanLossService.draft_status.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.DarmanLossService.update_statusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.DarmanLossService.update_statusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.DarmanLossService.update_statusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.EGateService">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.WithdrawalRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.WithdrawalEnquiryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.GetWtransCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.GetWtransOfVIPCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.GetWtransOFOtherAccCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.PayRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.VerifyAndFinalizeRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.ReverseRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.TrackAndFinalizeRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.GetTransactionListOfPayerCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.EPaymentGate.EGateService.GetWithdrawalTransactionListCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.WithdrawalRequest(System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.WithdrawalRequestAsync(System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.WithdrawalRequestAsync(System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.WithdrawalEnquiry(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.WithdrawalEnquiryAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.WithdrawalEnquiryAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtrans(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtransAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtransAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtransOfVIP(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtransOfVIPAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtransOfVIPAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtransOFOtherAcc(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtransOFOtherAccAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWtransOFOtherAccAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.PayRequest(System.Byte,System.Int64,System.Int32,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.PayRequestAsync(System.Byte,System.Int64,System.Int32,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.PayRequestAsync(System.Byte,System.Int64,System.Int32,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.VerifyAndFinalizeRequest(System.Int32,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.VerifyAndFinalizeRequestAsync(System.Int32,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.VerifyAndFinalizeRequestAsync(System.Int32,System.Int64,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.ReverseRequest(System.Int32,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.ReverseRequestAsync(System.Int32,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.ReverseRequestAsync(System.Int32,System.Int64,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.TrackAndFinalizeRequest(System.Int32,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.TrackAndFinalizeRequestAsync(System.Int32,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.TrackAndFinalizeRequestAsync(System.Int32,System.Int64,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetTransactionListOfPayer(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetTransactionListOfPayerAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetTransactionListOfPayerAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWithdrawalTransactionList">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWithdrawalTransactionListAsync">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.GetWithdrawalTransactionListAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.EPaymentGate.EGateService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.UserCredentials">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.UserCredentials.Username">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.UserCredentials.Password">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.UserCredentials.AnyAttr">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.TransactionData">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.TransactionType">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.TransactionDate">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.TransactionDescription">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.JournalNumber">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.TransactionAmount">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.TransactionCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.AccountBalance">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.PostDate">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.RequestNumber">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.TransactionTime">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.PaymentId">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TransactionData.BrnchCode">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.WithdrawalResult">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.WithdrawalResult.OrderID">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.WithdrawalResult.ResultCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.WithdrawalResult.ResultDescription">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.WithdrawalResult.SATNARefCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.WithdrawalResult.TransactionDate">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.WithdrawalRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.WithdrawalRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.WithdrawalRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.WithdrawalEnquiryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.WithdrawalEnquiryCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.WithdrawalEnquiryCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetWtransCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetWtransCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.GetWtransCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetWtransOfVIPCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetWtransOfVIPCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.GetWtransOfVIPCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetWtransOFOtherAccCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetWtransOFOtherAccCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.GetWtransOFOtherAccCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.PayRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.PayRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.PayRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.VerifyAndFinalizeRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.VerifyAndFinalizeRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.VerifyAndFinalizeRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.ReverseRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.ReverseRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.ReverseRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.TrackAndFinalizeRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.TrackAndFinalizeRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.TrackAndFinalizeRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetTransactionListOfPayerCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetTransactionListOfPayerCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.GetTransactionListOfPayerCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetWithdrawalTransactionListCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.EPaymentGate.GetWithdrawalTransactionListCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.EPaymentGate.GetWithdrawalTransactionListCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.FileCoordinator">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.UploadV2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.UploadGUIDV2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.GetFileInfoV2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.GetThumbnailV2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.DownloadV2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.FileExistsV2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.DeleteFileV2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.UploadCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.UploadGUIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.GetFileInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.GetThumbnailCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.DownloadCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.FileServerV2.FileCoordinator.FileExistsCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadV2(System.String,System.String,System.Byte[],Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadV2Async(System.String,System.String,System.Byte[],Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadV2Async(System.String,System.String,System.Byte[],Business.FileServerV2.UserInfo,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadGUIDV2(System.String,System.String,System.Byte[],Business.FileServerV2.UserInfo,System.Int32@)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadGUIDV2Async(System.String,System.String,System.Byte[],Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadGUIDV2Async(System.String,System.String,System.Byte[],Business.FileServerV2.UserInfo,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetFileInfoV2(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetFileInfoV2Async(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetFileInfoV2Async(System.Int32,Business.FileServerV2.UserInfo,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetThumbnailV2(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetThumbnailV2Async(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetThumbnailV2Async(System.Int32,Business.FileServerV2.UserInfo,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.DownloadV2(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.DownloadV2Async(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.DownloadV2Async(System.Int32,Business.FileServerV2.UserInfo,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.FileExistsV2(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.FileExistsV2Async(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.FileExistsV2Async(System.Int32,Business.FileServerV2.UserInfo,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.DeleteFileV2(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.DeleteFileV2Async(System.Int32,Business.FileServerV2.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.DeleteFileV2Async(System.Int32,Business.FileServerV2.UserInfo,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.Upload(System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadAsync(System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadAsync(System.String,System.String,System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadGUID(System.String,System.String,System.Byte[],System.Int32@)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadGUIDAsync(System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.UploadGUIDAsync(System.String,System.String,System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetFileInfo(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetFileInfoAsync(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetFileInfoAsync(System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetThumbnail(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetThumbnailAsync(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.GetThumbnailAsync(System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.Download(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.DownloadAsync(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.DownloadAsync(System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.FileExists(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.FileExistsAsync(System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.FileExistsAsync(System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.FileServerV2.FileCoordinator.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UserInfo">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.UserInfo.UserName">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.UserInfo.Password">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.FileInformation">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.Name">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.Size">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.CreatedDate">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.Description">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.ContentType">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.Width">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.Height">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.GUID">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.MainURL">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileInformation.ThumbnailURL">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UploadV2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UploadV2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.UploadV2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UploadGUIDV2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UploadGUIDV2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.UploadGUIDV2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.UploadGUIDV2CompletedEventArgs.id">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.GetFileInfoV2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.GetFileInfoV2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.GetFileInfoV2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.GetThumbnailV2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.GetThumbnailV2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.GetThumbnailV2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.DownloadV2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.DownloadV2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.DownloadV2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.FileExistsV2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.FileExistsV2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileExistsV2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.DeleteFileV2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.DeleteFileV2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.DeleteFileV2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UploadCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UploadCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.UploadCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UploadGUIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.UploadGUIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.UploadGUIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.UploadGUIDCompletedEventArgs.id">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.GetFileInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.GetFileInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.GetFileInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.GetThumbnailCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.GetThumbnailCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.GetThumbnailCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.DownloadCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.DownloadCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.DownloadCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.FileExistsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.FileServerV2.FileExistsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.FileServerV2.FileExistsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.GeneralService.Policy_New2">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeneralService.Policy_New2.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.GeneralService.Policy_New2.GetLossNoCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeneralService.Policy_New2.GetLossNo(System.String,Business.GeneralService.My_Policy)">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeneralService.Policy_New2.GetLossNoAsync(System.String,Business.GeneralService.My_Policy)">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeneralService.Policy_New2.GetLossNoAsync(System.String,Business.GeneralService.My_Policy,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeneralService.Policy_New2.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.GeneralService.My_Policy">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.BranchID">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.PayableAmount">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.FirstPayment">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.MaturityNo">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.FirstMaturityDate">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.MaturityPeriod">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.FieldsValue">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.UserID">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.My_Policy.AttachTypeIDs">
+            <remarks/>
+        </member>
+        <member name="T:Business.GeneralService.GetLossNoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.GeneralService.GetLossNoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeneralService.GetLossNoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.GeoLocation.GeoLocationService">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeoLocation.GeoLocationService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.GeoLocation.GeoLocationService.GetGeoLocationCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeoLocation.GeoLocationService.GetGeoLocation(System.Int32,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeoLocation.GeoLocationService.GetGeoLocationAsync(System.Int32,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeoLocation.GeoLocationService.GetGeoLocationAsync(System.Int32,System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.GeoLocation.GeoLocationService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.GeoLocation.GetGeoLocationCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.GeoLocation.GetGeoLocationCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.GeoLocation.GetGeoLocationCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsFinancialChecker.Policy_Credit">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsFinancialChecker.Policy_Credit.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.InsFinancialChecker.Policy_Credit.Check_Policy_CreditCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsFinancialChecker.Policy_Credit.Check_Policy_Credit(System.String,System.Int32,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsFinancialChecker.Policy_Credit.Check_Policy_CreditAsync(System.String,System.Int32,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsFinancialChecker.Policy_Credit.Check_Policy_CreditAsync(System.String,System.Int32,System.Decimal,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsFinancialChecker.Policy_Credit.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsFinancialChecker.Check_Policy_CreditCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsFinancialChecker.Check_Policy_CreditCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsFinancialChecker.Check_Policy_CreditCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiry_ins">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.InsInquiry.inquiry_ins.inquiry_lossCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.InsInquiry.inquiry_ins.inquiryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.InsInquiry.inquiry_ins.inquiry_detailsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.InsInquiry.inquiry_ins.inquiry_attachCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_loss(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_lossAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_lossAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiryAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiryAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_details(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_detailsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_detailsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_attach(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_attachAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.inquiry_attachAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsInquiry.inquiry_ins.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.mypolicy">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.returns">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.instype">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.startdate">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.finishdate">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.insdate">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.payableamount">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.stationno">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.insured_type">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.type_arz">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.attcount">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.moredebime">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.branchid">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.capital">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.Name">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.mypolicy.Family">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiry_lossCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiry_lossCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.inquiry_lossCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiryCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.inquiryCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiry_detailsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiry_detailsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.inquiry_detailsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiry_attachCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsInquiry.inquiry_attachCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsInquiry.inquiry_attachCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsurancePerson.SessionService">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.InsurancePerson.SessionService.GetSessionParametersObjCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.InsurancePerson.SessionService.GetSessionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.InsurancePerson.SessionService.GetSessionCodeCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSessionParametersObj">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSessionParametersObjAsync">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSessionParametersObjAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSession(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSessionAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSessionAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSessionCode(Business.InsurancePerson.SessionParameters)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSessionCodeAsync(Business.InsurancePerson.SessionParameters)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.GetSessionCodeAsync(Business.InsurancePerson.SessionParameters,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.InsurancePerson.SessionService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsurancePerson.SessionParameters">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.Command">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.type">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.personId">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.groupIdList">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.groupId">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.returnUrl">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.systemId">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.hasRelatedPerson">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.Code">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.erroMessage">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.manageGroup">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.ownerId">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.AddressOwnertype">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.Address">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.UserName">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.SessionParameters.Password">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsurancePerson.GetSessionParametersObjCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsurancePerson.GetSessionParametersObjCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.GetSessionParametersObjCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsurancePerson.GetSessionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsurancePerson.GetSessionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.GetSessionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsurancePerson.GetSessionCodeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.InsurancePerson.GetSessionCodeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.InsurancePerson.GetSessionCodeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.PersonInfoService">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.PersonInfoService.PersonInfoService.GetPersonInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PersonInfoService.PersonInfoService.GetPersonGroupsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PersonInfoService.PersonInfoService.GetPersonInfoListCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PersonInfoService.PersonInfoService.GetRelationshipCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PersonInfoService.PersonInfoService.AddPersonCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PersonInfoService.PersonInfoService.AddPersonInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PersonInfoService.PersonInfoService.AddPersonFinalOrUnknownCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PersonInfoService.PersonInfoService.GetPersonByNationalCodeCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonGroups(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonGroupsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonGroupsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonInfoList(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonInfoListAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonInfoListAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetRelationship(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetRelationshipAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetRelationshipAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPerson(System.String,System.String,System.String,Business.PersonInfoService.Person)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPersonAsync(System.String,System.String,System.String,Business.PersonInfoService.Person)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPersonAsync(System.String,System.String,System.String,Business.PersonInfoService.Person,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPersonInfo(System.String,System.String,System.String,Business.PersonInfoService.Person)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPersonInfoAsync(System.String,System.String,System.String,Business.PersonInfoService.Person)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPersonInfoAsync(System.String,System.String,System.String,Business.PersonInfoService.Person,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPersonFinalOrUnknown(System.String,System.String,System.String,Business.PersonInfoService.Person,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPersonFinalOrUnknownAsync(System.String,System.String,System.String,Business.PersonInfoService.Person,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.AddPersonFinalOrUnknownAsync(System.String,System.String,System.String,Business.PersonInfoService.Person,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonByNationalCode(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonByNationalCodeAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.GetPersonByNationalCodeAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PersonInfoService.PersonInfoService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.PersonGroup">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonGroup.Id">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonGroup.Name">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonGroup.Code">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonGroup.Title">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.ExtensionDataObject">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.PersonInfo">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.FirstName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.LastName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.FatherName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.DocNo">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.NationalCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.Gender">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.ShenasnamehSeri">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.ShenasnamehSerial">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.BirthDate">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.DeathStatus">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.DeathDate">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.VerificationStatus">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.PersonInfo.ExtensionData">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.AddPersonInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.AddPersonInfoResult.ResultCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.AddPersonInfoResult.CorrectPersonInfo">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.Person">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.ID">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Marital">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Religion">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Gender">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Military">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Diploma">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.RegistrationType">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.RegistrationStatus">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.FirstName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.LastName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.ENFirstName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.ENLastName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.NickName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.NationalCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.DocNo">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.DocSerial">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.DocLocationGeoID">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.DocLocationCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.DocDate">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.FatherName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.PassportNO">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.BirthLocation">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.BirthDate">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Description">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.ExemptionReason">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Type">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.NationalityGeoId">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Email">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Mobile">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.EconomicCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.DocSeriesA">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.DocSeriesN">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.IsPublic">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.VerificationStatus">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.Death">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.Person.DeathDate">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.RelationObject">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.RelationObject.RelationName">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.RelationObject.RelationTitle">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.RelationObject.RelationCode">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.RelationObject.RelationSubTitle">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetPersonInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetPersonInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.GetPersonInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetPersonGroupsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetPersonGroupsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.GetPersonGroupsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetPersonInfoListCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetPersonInfoListCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.GetPersonInfoListCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetRelationshipCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetRelationshipCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.GetRelationshipCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.AddPersonCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.AddPersonCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.AddPersonCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.AddPersonInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.AddPersonInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.AddPersonInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.AddPersonFinalOrUnknownCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.AddPersonFinalOrUnknownCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.AddPersonFinalOrUnknownCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetPersonByNationalCodeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PersonInfoService.GetPersonByNationalCodeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PersonInfoService.GetPersonByNationalCodeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Users">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.InquiryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.MarketerListCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.Insert_CounterCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.Change_CounterCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.Change_CounterAddressCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.CounterListCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.CounterList1Completed">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.Check_Group_MarketerCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.PortalSSO.Users.Check_MarketerCodeCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Inquiry(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.InquiryAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.InquiryAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.MarketerList(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.MarketerListAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.MarketerListAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Insert_Counter(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Decimal,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Insert_CounterAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Decimal,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Insert_CounterAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Decimal,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Change_Counter(System.String,System.Int32,System.Int32,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Change_CounterAsync(System.String,System.Int32,System.Int32,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Change_CounterAsync(System.String,System.Int32,System.Int32,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Change_CounterAddress(System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Change_CounterAddressAsync(System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Change_CounterAddressAsync(System.String,System.String,System.Int32,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.CounterList(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.CounterListAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.CounterListAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.CounterList1(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.CounterList1Async(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.CounterList1Async(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Check_Group_Marketer(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Boolean@,System.Boolean@)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Check_Group_MarketerAsync(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Check_Group_MarketerAsync(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Boolean,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Check_MarketerCode(System.String,System.String,System.Boolean@,System.Int32@,System.Int32@,System.Byte@,System.Decimal@)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Check_MarketerCodeAsync(System.String,System.String,System.Boolean,System.Int32,System.Int32,System.Byte,System.Decimal)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.Check_MarketerCodeAsync(System.String,System.String,System.Boolean,System.Int32,System.Int32,System.Byte,System.Decimal,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.PortalSSO.Users.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.InquiryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.InquiryCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.InquiryCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.MarketerListCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.MarketerListCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.MarketerListCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Insert_CounterCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Insert_CounterCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Insert_CounterCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Change_CounterCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Change_CounterCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Change_CounterCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Change_CounterAddressCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Change_CounterAddressCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Change_CounterAddressCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.CounterListCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.CounterListCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.CounterListCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.CounterList1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.CounterList1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.CounterList1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Check_Group_MarketerCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Check_Group_MarketerCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Check_Group_MarketerCompletedEventArgs.GroupOK">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Check_Group_MarketerCompletedEventArgs.MarketerOK">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Check_MarketerCodeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.PortalSSO.Check_MarketerCodeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Check_MarketerCodeCompletedEventArgs.IsOK">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Check_MarketerCodeCompletedEventArgs.Stationno">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Check_MarketerCodeCompletedEventArgs.Locationno">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Check_MarketerCodeCompletedEventArgs.UserType">
+            <remarks/>
+        </member>
+        <member name="P:Business.PortalSSO.Check_MarketerCodeCompletedEventArgs.NewbimeID">
+            <remarks/>
+        </member>
+        <member name="T:Business.RuleEngineServiceReference.RuleEngineService">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Business.RuleEngineServiceReference.RuleEngineService.getResultCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.RuleEngineServiceReference.RuleEngineService.getResultExecuteAllCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Business.RuleEngineServiceReference.RuleEngineService.getResultWithSpecialExecutionCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResult(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResultAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResultAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResultExecuteAll(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResultExecuteAllAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResultExecuteAllAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResultWithSpecialExecution(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResultWithSpecialExecutionAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.getResultWithSpecialExecutionAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Business.RuleEngineServiceReference.RuleEngineService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Business.RuleEngineServiceReference.getResultCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.RuleEngineServiceReference.getResultCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.RuleEngineServiceReference.getResultCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.RuleEngineServiceReference.getResultExecuteAllCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.RuleEngineServiceReference.getResultExecuteAllCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.RuleEngineServiceReference.getResultExecuteAllCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Business.RuleEngineServiceReference.getResultWithSpecialExecutionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Business.RuleEngineServiceReference.getResultWithSpecialExecutionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Business.RuleEngineServiceReference.getResultWithSpecialExecutionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:My.Resources.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

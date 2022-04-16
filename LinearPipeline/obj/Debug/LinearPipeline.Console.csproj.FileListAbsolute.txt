@@ -1,0 +1,11 @@
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\bin\Debug\WdInsurance.GetCodeYekta.exe.config
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\bin\Debug\WdInsurance.GetCodeYekta.exe
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\bin\Debug\WdInsurance.GetCodeYekta.pdb
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\obj\Debug\LinearPipeline.Console.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\obj\Debug\LinearPipeline.Console.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\obj\Debug\LinearPipeline.Console.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\obj\Debug\LinearPipeline.Console.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\obj\Debug\WdInsurance.GetCodeYekta.exe
+C:\Users\Lenovo\source\repos\LinearPipeline\LinearPipeline\obj\Debug\WdInsurance.GetCodeYekta.pdb

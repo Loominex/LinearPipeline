@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CargoInsuranceModelStoreContainer" CdmEntityContainer="CargoInsuranceEntities">
+    <EntitySetMapping Name="T_SanhabServiceErrors">
+      <EntityTypeMapping TypeName="CargoInsuranceModel.T_SanhabServiceErrors">
+        <MappingFragment StoreEntitySet="T_SanhabServiceErrors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ParentServiceId" ColumnName="ParentServiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SanhabServiceResult">
+      <EntityTypeMapping TypeName="CargoInsuranceModel.T_SanhabServiceResult">
+        <MappingFragment StoreEntitySet="T-SanhabServiceResult">
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ExecutionId" ColumnName="ExecutionId" />
+          <ScalarProperty Name="IsException" ColumnName="IsException" />
+          <ScalarProperty Name="IsSuccess" ColumnName="IsSuccess" />
+          <ScalarProperty Name="ResultString" ColumnName="ResultString" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Inp_Id" ColumnName="Inp_Id" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

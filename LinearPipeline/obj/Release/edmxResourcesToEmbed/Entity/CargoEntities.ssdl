@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CargoInsuranceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="T_SanhabServiceErrors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="10" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="ParentServiceId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="T-SanhabServiceResult">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Inp_Id" Type="int" />
+    <Property Name="ServiceName" Type="varchar" MaxLength="50" />
+    <Property Name="ResultString" Type="nvarchar(max)" />
+    <Property Name="IsSuccess" Type="bit" />
+    <Property Name="IsException" Type="bit" />
+    <Property Name="ExecutionId" Type="varchar" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_T_SanhabServiceErrors_T-SanhabServiceResult">
+    <End Role="T-SanhabServiceResult" Type="Self.T-SanhabServiceResult" Multiplicity="0..1" />
+    <End Role="T_SanhabServiceErrors" Type="Self.T_SanhabServiceErrors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T-SanhabServiceResult">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_SanhabServiceErrors">
+        <PropertyRef Name="ParentServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CargoInsuranceModelStoreContainer">
+    <EntitySet Name="T_SanhabServiceErrors" EntityType="Self.T_SanhabServiceErrors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T-SanhabServiceResult" EntityType="Self.T-SanhabServiceResult" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_T_SanhabServiceErrors_T-SanhabServiceResult" Association="Self.FK_T_SanhabServiceErrors_T-SanhabServiceResult">
+      <End Role="T-SanhabServiceResult" EntitySet="T-SanhabServiceResult" />
+      <End Role="T_SanhabServiceErrors" EntitySet="T_SanhabServiceErrors" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,3 @@
+C:\Users\Lenovo\Desktop\WdInsurance.GetCodeYekta\obj\Debug\WdInsurance.GetCodeYekta.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\WdInsurance.GetCodeYekta\obj\Debug\WdInsurance.GetCodeYekta.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lenovo\Desktop\WdInsurance.GetCodeYekta\obj\Debug\WdInsurance.GetCodeYekta.csproj.CoreCompileInputs.cache

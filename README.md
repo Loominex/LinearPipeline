@@ -1,1 +1,1 @@
-LinearPipeline
+Linear pipeline is a simple structure for executing tasks in a sequential order,Steps are registered into pipeline and executed in the order of inserting, First Insert First Execute (FIFE), Best use of pipeline is for task based application that has not complicated business in point of execution tasks, for complicated execution businessess, we can use non-linear pipeline that order of execution of steps are defined in executin centre.
